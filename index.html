@@ -3,31 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+  <section class="expenses flex-col">
+    <div class="balance-section">
+      <p class="text-regular flex-col balance">My balance <span>$921.48</span></p>
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="details">
+      <h2 class="h2">Spending - Last 7 days</h2>
+      <div class="chart">
+          <div class="chart-bar"></div>
+          <p>mon</p>
+          <div class="chart-bar"></div>
+          <p>tue</p>
+          <div class="chart-bar today"></div>
+          <p>wed</p>
+          <div class="chart-bar"></div>
+          <p>thu</p>
+          <div class="chart-bar"></div>
+          <p>fri</p>
+          <div class="chart-bar"></div>
+          <p>sat</p>
+          <div class="chart-bar"></div>
+          <p>sun</p>
+      </div>
+      <hr>
+      <div class="month">
+        <p class="month-total flex-col">Total this month <span>$478.33</span></p>
+        <p class="month-prev flex-col"><span>+2.4%</span>from last month</p>
+      </div>
+    </div>
+  </section>
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
