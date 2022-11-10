@@ -6,6 +6,7 @@ fetch("data.JSON")
     let max = Math.max(...amount);
     chartBars.forEach((bar, i) => {
         bar.style.height = (amount[i] / max) * 100 + "%";
+        bar.dataset.amount = "$" + amount[i];
     })
 })
 
