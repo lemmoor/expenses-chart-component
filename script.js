@@ -1,4 +1,4 @@
-fetch("data.JSON")
+fetch("./data.JSON")
 .then(res => res.json())
 .then(data => {
     const chartBars = document.querySelectorAll(".chart-bar");
